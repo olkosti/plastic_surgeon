@@ -21,18 +21,20 @@
         <header class="header">
             <div class="header__contacts">
                 <img class="header__mark" src="assets/images/icons/icon-mark.svg" alt="icon-mark">
-                <p class="header_adress">г. Чебоксары, Социалистическая, 1а</p>
+                <p class="header_adress"><span class="header_adress_city">г. Чебоксары, </span>Социалистическая, 1а</p>
                 <img class="header__tube" src="assets/images/icons/icon-phone.svg" alt="icon-phone">
                 <p class="header_phone">+7 906 383 81 81</p>
             </div>
         </header>
         <main class="main">
             <section class="page-title">
-                <h1 class="page-title__title">Иванова Софья Владимировна <br><span
-                        class="page-title__subtitle">Пластический
-                        хирург, косметолог</span></h1>
+                <h1 class="page-title__title">Иванова Софья Владимировна</h1> <br>
+                <p class="page-title__subtitle">Пластический
+                    хирург, косметолог</p>
                 <div class="page-title__button">
-                    <a class="" href="http://">Запишись на бесплатную консультацию</a>
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfizuP9DoGg0rKnocXdfgjCZQIOa0HHNa39Q5PibTcx4RpuFg/viewform?usp=sf_link">Запишись
+                        на бесплатную консультацию</a>
                 </div>
             </section>
             <div class="price__root">
@@ -120,9 +122,10 @@
                             <p class="price__service">Липосакция</p>
                             <p class="price__cost">от 25 000 руб.</p>
                         </div>
-                        <div class="price__item">
+                        <div class="price__item price__item_cheiloplasty">
                             <p class="price__number">15/</p>
-                            <p class="price__service">Лабиопластика (коррекция малых половых губ)</p>
+                            <p class="price__service price__service_cheiloplasty">Лабиопластика (коррекция малых половых
+                                губ)</p>
                             <p class="price__cost">от 25 000 руб.</p>
                         </div>
                         <div class="price__item">
@@ -160,19 +163,19 @@
                 </section>
             </div>
             <section class="map">
-                <h2 class="map__title">Карта проезда</h2>
                 <div class="map__wrapp">
                     <div class="map__location-map">
+                        <h2 class="map__title">Карта проезда</h2>
                         <img class="map__location-img" src="assets/images/map.png" alt="location-map">
                     </div>
                     <div class="map__inner">
-                        <iframe class="map__map-ya"
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7e4982e02663fb674e4bff6b86f141a7745e514c6ab72cda6080e324761099d&amp;source=constructor"
-                            frameborder="0"></iframe>
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae7e4982e02663fb674e4bff6b86f141a7745e514c6ab72cda6080e324761099d&amp;width=100%&amp;height=447&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             </section>
             <footer class="footer">
+                <p class="footer__consultations">Консультации бесплатные</p>
                 <div class="footer__body">
                     <img src="assets/images/photo-small.png" alt="foto" class="footer__image">
                     <div class="footer__name">
@@ -181,14 +184,18 @@
                     </div>
                     <div class="footer__contacts">
                         <p class="footer__address">Прием веду по адресу:<br> <span
-                                class="footer__address-bold">Социалистическая, 1а,</span> Городской клинический
-                            центр, юго-западный район.</p>
-                        <p class="footer__phone">Контактный телефон: <span class="footer__phone-bold">+7 906 383 81
-                                81</span></p>
+                                class="footer__address-bold">Социалистическая, 1а,</span> <span
+                                class="footer__address-small">Городской клинический
+                                центр, юго-западный район.</span></p>
+                        <p class="footer__phone">Контактный телефон: </p>
+                        <p class="footer__phone-bold">+7 906 383 81 81</p>
                         <div class="footer__icons">
-                            <img src="assets/images/icons/icon-vk.svg" alt="icon-vk" class="footer__icon-vk">
-                            <img src="assets/images/icons/icon-tg.svg" alt="icon-tg" class="footer__icon-tg">
-                            <img src="assets/images/icons/icon-ig.svg" alt="icon-ig" class="footer__icon-ig">
+                            <a href="https://vk.com/sofidoc" target="_blank"><img src="assets/images/icons/icon-vk.svg"
+                                    alt="icon-vk" class="footer__icon-vk"></a>
+                            <a href="https://t.me/sofi_doc21" target="_blank"><img src="assets/images/icons/icon-tg.svg"
+                                    alt="icon-tg" class="footer__icon-tg"></a>
+                            <a href="https://vk.com/sofidoc" target="_blank"><img src="assets/images/icons/icon-ig.svg"
+                                    alt="icon-ig" class="footer__icon-ig"></a>
                         </div>
                     </div>
 
