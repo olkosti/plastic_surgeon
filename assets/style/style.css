@@ -1,0 +1,281 @@
+/* @font-face {
+    font-family: "Noah-Regular";
+    src: local("Noah Regular"), local("Noah-Regular"),
+        url("../fonts/Noah-Regular.woff2") format("woff2"),
+        url("../fonts/Noah-Regular.woff") format("woff"),
+        url("../fonts/Noah-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+} */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+}
+.wrapp {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background: #F8F6F3 url(../images/title-page.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    width: 100vw;
+    height: 650px;
+}
+
+/* -------------------- header ----------------------- */
+.header {
+    padding-top: 48px;
+    padding-bottom: 74px;
+    margin-left: 13.5%;
+}
+.header__contacts {
+    display: flex;
+}
+.header__mark {
+    margin-right: 8px;
+}
+.header_adress,
+.header_phone {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #1C1D20;
+    opacity: 0.4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header_adress {
+    margin-right: 30px;
+}
+.header__tube {
+    margin-right: 8px;
+}
+
+/* ------------- Титульная страница -------------------- */
+.page-title {
+    margin-left: 13.5%;
+}
+.page-title__title,
+.page-title__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    color: #494A4D;
+}
+.page-title__title {
+    max-width: 566px;
+    margin-bottom: 30px;
+}
+.page-title__subtitle {    
+    font-weight: 400;  
+}
+.page-title__button {
+    display: flex;
+    width: 305px;
+    height: 59px;   
+    background: #E72C79;
+    border-radius: 48px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+/* ------------------ Прайс-лист --------------- */
+.price__root {
+    background-color: #F8F6F3;
+}
+.price {
+    margin-left: 13.5%;    
+    margin-top: 190px;
+    max-width: 830px;
+    
+}
+.price__title {
+    display: flex;
+}
+.price__title-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 137.5%;
+    color: #494A4D;
+    align-items: center;
+}
+.price__contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.price__contacts_viber {
+    margin-right: 5px;
+}
+.price__contacts_tg {
+    margin-right: 5px;
+}
+.price__item {    
+    display: flex;    
+    height: 48px;
+    border-bottom: 1px solid #8E8E90;;
+}
+.price__number {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 137.5%;    
+    color: #8E8E90;
+    width: 44px;
+    display: flex;
+    align-items: center;
+}
+.price__service,
+.price__cost {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 200%;
+    color: #1C1D20;    
+}
+.price__service {
+    width: 580px;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+.price__cost {
+    margin-left: auto;
+}
+.price__item_cheiloplasty {
+    height: 77px;    
+}   
+
+.price__service_cheiloplasty {
+    line-height: 150%;
+}
+
+/* ----------------- Карта проезда ---------------- */
+.map {
+    padding-left: 13.5%;
+    height: 457px;
+    width: 100vw;
+    background-color: #FCFCF7;
+    }
+.map__wrapp {
+    display: flex;
+}
+.map__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 137.5%;    
+    color: #494A4D;
+    align-items: center;
+    max-width: 349px;
+    margin-bottom: -65px;
+    position: relative;
+    margin-left: 35px;
+}
+.map__location-map {    
+    margin-right: 76px;
+}
+.map__location-img {
+    background-color: #FCFCF7;
+    width: 100%;  
+}
+.map__map-ya {
+    width: 600px;
+    height: 447px;
+}
+
+/* --------------- footer -----------------*/
+.footer {
+    padding-left: 13.5%;
+    background-color: #E5E1DB;
+}
+.footer__body {
+    display: flex;
+}
+.footer__image {
+    margin-left: 6.25%;
+    margin-right: 3.1%;
+    width: 199px;
+    height: 199px;
+}
+.footer__name {
+    max-width: 278px;
+    margin-right: 6.5%;
+}
+.footer__title,
+.footer__subtitle,
+.footer__address {
+    font-family: 'Manrope';
+    font-style: normal;      
+    color: #1C1D20;
+    line-height: 145%;
+}
+.footer__title {
+    font-weight: 700;  
+    font-size: 32px;    
+}
+.footer__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+.footer__contacts {
+    max-width: 450px;
+}
+.footer__address {
+    font-size: 22px;
+}
+.footer__phone {
+}
+.footer__phone-bold,
+.footer__address-bold {
+    font-weight: 700;
+}
+.footer__icons {
+}
+.footer__icon-vk {
+}
+.footer__icon-tg {
+}
+.footer__icon-ig {
+}
+.footer__agreement {
+}
+.footer__user-agreement {
+    color: #1C1D20;
+}
