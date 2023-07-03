@@ -1,12 +1,75 @@
-/* @font-face {
-    font-family: "Noah-Regular";
-    src: local("Noah Regular"), local("Noah-Regular"),
-        url("../fonts/Noah-Regular.woff2") format("woff2"),
-        url("../fonts/Noah-Regular.woff") format("woff"),
-        url("../fonts/Noah-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-} */
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.eot);
+    src: url(../fonts/Inter-Regular.eot?#iefix) format('embedded-opentype'),
+            url(../fonts/Inter-Regular.otf) format('otf'),
+            url(../fonts/Inter-Regular.svg#Inter-Regular) format('svg'),
+            url(../fonts/Inter-Regular.woff) format('woff'),
+            url(../fonts/Inter-Regular.ttf) format('ttf'),
+            url(../fonts/Inter-Regular.woff2) format('woff2');
+            font-weight: normal;
+            font-style: normal;
+    }
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/Manrope-Bold.eot);
+    src: url(../fonts/Manrope-Bold.eot?#iefix) format('embedded-opentype'),
+            url(../fonts/Manrope-Bold.otf) format('otf'),
+            url(../fonts/Manrope-Bold.svg#Manrope-Bold) format('svg'),
+            url(../fonts/Manrope-Bold.ttf) format('ttf'),
+            url(../fonts/Manrope-Bold.woff) format('woff'),
+            url(../fonts/Manrope-Bold.woff2) format('woff2');
+            font-weight: 700;
+            font-style: normal;
+    }
+@font-face {
+        font-family: 'Manrope';
+        src: url(../fonts/Manrope-Regular.eot);
+        src: url(../fonts/Manrope-Regular.eot?#iefix) format('embedded-opentype'),
+                url(../fonts/Manrope-Regular.otf) format('otf'),
+                url(../fonts/Manrope-Regular.svg#Manrope-Regular) format('svg'),
+                url(../fonts/Manrope-Regular.ttf) format('ttf'),
+                url(../fonts/Manrope-Regular.woff) format('woff'),
+                url(../fonts/Manrope-Regular.woff2) format('woff2');
+                font-weight: normal;
+                font-style: normal;
+        }
+@font-face {
+        font-family: 'Manrope';
+        src: url(../fonts/Manrope-SemiBold.eot);
+        src: url(../fonts/Manrope-SemiBold.eot?#iefix) format('embedded-opentype'),
+                url(../fonts/Manrope-SemiBold.otf) format('otf'),
+                url(../fonts/Manrope-SemiBold.svg#Manrope-SemiBold) format('svg'),
+                url(../fonts/Manrope-SemiBold.ttf) format('ttf'),
+                url(../fonts/Manrope-SemiBold.woff) format('woff'),
+                url(../fonts/Manrope-SemiBold.woff2) format('woff2');
+                font-weight: 600;
+                font-style: normal;
+        }
+@font-face {
+        font-family: 'Raleway';
+        src: url(../fonts/Raleway-Bold.eot);
+        src: url(../fonts/Raleway-Bold.eot?#iefix) format('embedded-opentype'),
+                url(../fonts/Raleway-Bold.otf) format('otf'),
+                url(../fonts/Raleway-Bold.svg#Raleway-Bold) format('svg'),
+                url(../fonts/Raleway-Bold.ttf) format('ttf'),
+                url(../fonts/Raleway-Bold.woff) format('woff'),
+                url(../fonts/Raleway-Bold.woff2) format('woff2');
+                font-weight: 700;
+                font-style: normal;
+        }
+@font-face {
+        font-family: 'Raleway';
+        src: url(../fonts/Raleway-Regular.eot);
+        src: url(../fonts/Raleway-Regular.eot?#iefix) format('embedded-opentype'),
+                url(../fonts/Raleway-Regular.otf) format('otf'),
+                url(../fonts/Raleway-Regular.svg#Raleway-Regular) format('svg'),
+                url(../fonts/Raleway-Regular.ttf) format('ttf'),
+                url(../fonts/Raleway-Regular.woff) format('woff'),
+                url(../fonts/Raleway-Regular.woff2) format('woff2');
+                font-weight: normal;
+                font-style: normal;
+        }
 *,
 *::before,
 *::after {
@@ -38,7 +101,7 @@ h6 {
     padding: 0;
 }
 .wrapp {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     background: #F8F6F3 url(../images/title-page.jpg);
     background-position: 0 0;
@@ -87,7 +150,7 @@ h6 {
 }
 .header_adress,
 .header_phone {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -148,7 +211,7 @@ h6 {
 }
 .page-title__title,
 .page-title__subtitle {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -169,7 +232,7 @@ h6 {
     min-height: 59px;   
     background: #E72C79;
     border-radius: 48px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope';
     font-weight: 700;
     font-size: 20px;
     text-align: center;
@@ -251,7 +314,6 @@ h6 {
 }
 .price__title-text {
     font-family: 'Manrope';
-    font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 137.5%;
@@ -505,7 +567,7 @@ h6 {
     display: flex;
 }
 .map__title {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -593,7 +655,7 @@ h6 {
 .footer__title,
 .footer__subtitle,
 .footer__address {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope';
     font-style: normal;      
     color: #1C1D20;
     line-height: 145%;
@@ -705,7 +767,7 @@ h6 {
     }
     .footer__consultations {
         display: block;
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Manrope';
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
