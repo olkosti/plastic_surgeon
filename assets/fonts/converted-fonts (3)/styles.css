@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'Manrope-SemiBold';
-  src: url(./Manrope-SemiBold.eot);
-  src: url(./Manrope-SemiBold.eot?#iefix) format('embedded-opentype'),
-       url(./Manrope-SemiBold.otf) format('otf'),
-       url(./Manrope-SemiBold.svg#Manrope-SemiBold) format('svg'),
-       url(./Manrope-SemiBold.woff) format('woff'),
-       url(./Manrope-SemiBold.woff2) format('woff2');
-}
