@@ -106,7 +106,6 @@ h6 {
     background: #F8F6F3 url(../images/title-page.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
-    /* background-attachment: fixed;  */
     background-size: cover;
     height: 650px; 
 }
@@ -130,6 +129,11 @@ h6 {
     .wrapp {
     background-image: url(../images/mobile-title-page.jpg);
     background-attachment: scroll; 
+    }
+}
+@media screen and (max-width: 321px) {
+    .wrapp {
+        background-position: center center;
     }
 }
 
@@ -269,6 +273,7 @@ h6 {
         background: #FFFFFF;
         box-shadow: 0px -8px 16px rgba(6, 46, 42, 0.16);
         border-radius: 50px 50px 0px 0px;
+        padding: 0 10px;
     }
     .page-title__title {
         max-width: 322px;
@@ -365,10 +370,16 @@ h6 {
     display: flex;
     align-items: center;
 }
-.price__item_cheiloplasty {
-    min-height: 77px;    
+.price__item_cheiloplasty,
+.price__item_labioplasty {
+    min-height: 77px;
+}
+.price__item_labioplasty {
+    display: flex;
+    align-items: center;   
 }   
-.price__service_cheiloplasty {
+.price__service_cheiloplasty,
+.price__service_labioplasty {
     line-height: 150%;
 }
 .price__contacts_wa,
@@ -441,7 +452,7 @@ h6 {
         margin-bottom: 10px;      
     }
     .price__title {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }    
     .price__service,
     .price__cost {
@@ -484,41 +495,39 @@ h6 {
         padding-top: 0;
     }
     .price {
-        margin-left: 25px;
+        margin-left: 10px;
+    }
+    .price__price-list {
+        margin-left: 35px;
     }
     .price__item {
         display: grid;
-        grid-template-columns: 25px 286px;
+        grid-template-columns: 25px 1fr;
         grid-template-rows: 1fr 25px;
         height: auto;
-        border: none;      
+        border: none;  
+        align-items: start;  
     }
     .price__title {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 58px 50px;
-        
+        grid-template-rows: 1fr 1fr;        
     }
     .price__title-text {
         font-size: 24px;
-        margin-left: 35px;
-        margin-bottom: 24px;
-        
+        margin-left: 35px;        
+        padding-bottom: 10px;        
     }
     .price__contacts {
-        margin: 0px 0px 20px 150px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        opacity: 0.5;
-        position: fixed;
-        bottom: 0px;
-        right: 0px;
-        flex-direction: column;
+        margin-left: 35px;
+        margin-top: 0px;
     }
-    .price__contacts_wa,
-    .price__contacts_tg {
-        margin-bottom: 8px;        
+    .price__contacts > a {
+        margin-right: 10px;
     }
+    .price__contacts > a:last-child {
+        margin-right: 0px;
+    }   
     .price__contacts_wa,
     .price__contacts_tg,
     .price__contacts_vk {
@@ -557,6 +566,11 @@ h6 {
     }
     
 }   
+@media screen and (max-width: 321px) {
+    .price__service {
+        line-height: 150%;
+    }
+}
 
 /* ----------------- Карта проезда ---------------- */
 .map {
@@ -831,7 +845,7 @@ h6 {
 
 @media screen and (max-width: 429px) {
     .footer {
-        padding-left: 20px;
+        padding-left: 25px;
         padding-top: 20px;
         background-color: #97618B;
     }
@@ -843,6 +857,9 @@ h6 {
     .footer__agreement,
     .footer__user-agreement {
         color: rgba(255, 255, 255, 0.45);
+    }
+    .footer__agreement {
+        padding-top: 20px;
     }
     .footer__image {
         margin-left: 0;
@@ -867,5 +884,24 @@ h6 {
         font-size: 16px;
         margin: 20px 0 0 35px;
     }
-    
 }
+@media screen and (max-width: 360px) {
+    .footer__consultations {
+        font-size: 18px;
+    }
+    .footer__address {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .footer__phone-bold {
+        font-size: 12px;
+        margin: 15px 0 0 0px;
+    }
+    .footer__agreement {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .footer__user-agreement {
+        display: none;
+    }
+    }
