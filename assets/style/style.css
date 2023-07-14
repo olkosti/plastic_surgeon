@@ -724,18 +724,16 @@ h6 {
 }
 .footer__icons {
     margin-top: 28px;
-    margin-left: 150px;
+    margin-left: 115px;
 }
 .footer__icons img {
     width: 59px;
     height: 59px;
 }
-.footer__icon-vk {
+.footer__icons a:not(:last-child) img {
     margin-right: 24px;
 }
-.footer__icon-tg {
-    margin-right: 24px;
-}
+
 .footer__agreement {
     display: flex;
     padding-bottom: 59px;
@@ -795,16 +793,17 @@ h6 {
     .footer__phone * {
         font-size: 16px;
     }
-    .footer__icon-vk,
-    .footer__icon-tg,
-    .footer__icon-ig {
-        width: 50px;
-        height: 50px;
+    .footer__icons img {
+        width: 40px;
+        height: 40px;
     }
 }
 @media screen and (max-width: 740px) {
     .footer__phone {
         flex-wrap: wrap;
+    }
+    .footer__icons a:not(:last-child) img {
+        margin-right: 15px;
     }
 }
 @media screen and (max-width: 660px) {
@@ -824,7 +823,6 @@ h6 {
     .footer__name {
         display: none;
     }
-    
     .footer__image {
         margin-left: 0;
         margin-right: 12px;       
@@ -853,8 +851,17 @@ h6 {
         font-weight: 400;
     }
     .footer__icons img{
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer__image {
+        width: 120px;
+        height: 120px;
+    }
+    .footer__contacts {
+        max-width: 200px;
     }
 }
 @media screen and (max-width: 460px) {
@@ -866,11 +873,7 @@ h6 {
     }
     .footer__contacts {
         margin-left: 10px;
-    }
-    .footer__image {
-        width: 120px;
-        height: 120px;
-    }
+    }    
 }
 
 @media screen and (max-width: 429px) {
@@ -943,4 +946,13 @@ h6 {
     .footer__phone-bold {
         margin: 0px 0 0 0px;
     }
+    .footer__contacts,
+    .footer__contacts * {
+        max-width: 160px;
+        margin: 0;
+    }
+    .footer__image {
+        width: 80px;
+        height: 80px;
+    }    
 }
