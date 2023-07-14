@@ -713,6 +713,7 @@ h6 {
 
 .footer__phone-bold a {
     color: black;
+    text-decoration: underline;
 }
 .footer__phone-bold,
 .footer__address-bold {
@@ -938,8 +939,11 @@ h6 {
         padding-top: 15px;
         padding-bottom: 20px;
     }
+    .footer__agreement {
+        flex-direction: column;
+    }
     .footer__user-agreement {
-        display: none;
+        margin-bottom: 5px;
     }
 }
 @media screen and (max-width: 321px) {
