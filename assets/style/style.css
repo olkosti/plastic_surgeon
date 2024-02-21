@@ -253,8 +253,8 @@ h6 {
     margin-right: 20px;
     padding: 5px 5px;
 }
-.page-title__button:last-child {
-    background: #911c4d;
+.page-title__button {
+    background: #E72C79;
     margin-bottom: 81px;
 }
 @media screen and (max-width: 1100px) {
@@ -304,6 +304,10 @@ h6 {
         font-weight: 700;
         text-align: center;
         line-height: 138%;
+        margin-bottom: 7px;
+    }
+    .page-title__buttons {
+        order: 3;
     }
     .page-title__button {
         max-width: 246px;
@@ -311,12 +315,8 @@ h6 {
         font-size: 16px;
         background: linear-gradient(180deg, #97618B 32.6%, #7E5275 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 48px;
-        order: 3;
+        border-radius: 48px;        
         margin: 0px 0px 30px 0px;
-    }
-    .page-title__button:last-child{
-        margin-bottom: 60px;
     }
 }
 
