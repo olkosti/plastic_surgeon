@@ -1007,7 +1007,7 @@ h6 {
 @media screen and (max-width: 530px) {    
     .materials {
         column-gap: 10px;
-        padding: 50px 13.5% 30px 13.5%;           
+        padding: 50px 5% 30px 5%;           
     }
     .material__images {
         max-width: 200px;
@@ -1018,12 +1018,12 @@ h6 {
         background-color: #FFFFFF;
     }
     .materials {
-        padding: 30px 13.5% 40px 13.5%; 
+        padding: 30px 5% 40px 5%; 
     }
 }
 @media screen and (max-width: 376px) {
     .materials {
-        padding: 20px 10% 30px 10%; 
+        padding: 20px 5% 30px 5%; 
     }
 }
 
