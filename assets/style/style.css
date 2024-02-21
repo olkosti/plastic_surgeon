@@ -163,6 +163,9 @@ h6 {
     opacity: 0.4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.header_phone a {
+    color: #1C1D20;
+}
 .header__adresses,
 .header__phones {
     display: flex;
@@ -193,7 +196,8 @@ h6 {
         margin-left: 15px;
     }    
     .header_adress,
-    .header_phone {
+    .header_phone,
+    .header_phone a {
         font-size: 14px;
         color: white;
         opacity: 1;
@@ -520,7 +524,7 @@ h6 {
         padding-top: 0;
     }
     .price {
-        margin-left: 10px;
+        margin-left: 0;
     }
     .price__price-list {
         margin-left: 35px;
@@ -594,9 +598,13 @@ h6 {
     .price__service_cheiloplasty {
         line-height: 120%;
         padding-top: 4px;
-    }
-    
+    }    
 }   
+@media screen and (max-width: 376px) {
+    .price {
+        padding: 0 1%;
+    }
+}
 @media screen and (max-width: 321px) {
     .price__service {
         line-height: 150%;
@@ -996,19 +1004,26 @@ h6 {
         padding: 90px 7% 50px 7%;
     }
 }
-@media screen and (max-width: 530px) {
-    /* .materials__root {
-        background-color: #FFFFFF;
-    } */
+@media screen and (max-width: 530px) {    
     .materials {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 0px;
-        row-gap: 20px;
-        padding: 50px 13.5% 50px 13.5%;    
+        column-gap: 10px;
+        padding: 50px 13.5% 30px 13.5%;           
     }
     .material__images {
         max-width: 200px;
+    }
+}
+@media screen and (max-width: 429px) {
+    .materials__root {
+        background-color: #FFFFFF;
+    }
+    .materials {
+        padding: 30px 13.5% 40px 13.5%; 
+    }
+}
+@media screen and (max-width: 376px) {
+    .materials {
+        padding: 20px 10% 30px 10%; 
     }
 }
 
